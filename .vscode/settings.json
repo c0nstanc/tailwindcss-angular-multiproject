@@ -1,0 +1,7 @@
+{
+  "css.customData": [".vscode/tailwind.json"],
+  "tailwindCSS.experimental.configFile": {
+    "projects/my-app-1/src/styles.scss": "projects/my-app-1/src/**",
+    "projects/my-app-2/src/styles.scss": "projects/my-app-2/src/**"
+  }
+}
