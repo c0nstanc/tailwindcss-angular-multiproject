@@ -29,7 +29,10 @@
                 "input": "projects/my-app-1/public"
               }
             ],
-            "styles": ["projects/my-app-1/src/styles.scss"],
+            "styles": [
+              "projects/my-app-1/src/styles.scss",
+              "projects/my-app-1/src/styles/tailwind/tailwind.css"
+            ],
             "scripts": [],
             "stylePreprocessorOptions": {
               "sass": {
@@ -125,7 +128,10 @@
                 "input": "projects/my-app-2/public"
               }
             ],
-            "styles": ["projects/my-app-2/src/styles.scss"],
+            "styles": [
+              "projects/my-app-2/src/styles.scss",
+              "projects/my-app-2/src/styles/tailwind/tailwind.css"
+            ],
             "scripts": [],
             "stylePreprocessorOptions": {
               "sass": {
@@ -198,13 +204,16 @@
   },
   "schematics": {
     "@schematics/angular:component": {
-      "type": "component"
+      "type": "component",
+      "skipTests": true
     },
     "@schematics/angular:directive": {
-      "type": "directive"
+      "type": "directive",
+      "skipTests": true
     },
     "@schematics/angular:service": {
-      "type": "service"
+      "type": "service",
+      "skipTests": true
     },
     "@schematics/angular:guard": {
       "typeSeparator": "."

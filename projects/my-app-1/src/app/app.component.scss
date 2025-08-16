@@ -1,0 +1,7 @@
+@reference '#my-app-1/tailwind';
+
+:host ::ng-deep {
+  .my-title {
+    @apply hover:bg-blue-300;
+  }
+}
